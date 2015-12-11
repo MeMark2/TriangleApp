@@ -17,6 +17,7 @@ namespace Triangle
         /// <returns>the hypotenuse as a double</returns>
         public double CalcHypotenuse(double a, double b)
         {
+            // Throw exception if the values cant be used to calculate the hypotenuse
             if (a <= 0.0 || b <= 0.0)
             {
                 throw new ArgumentOutOfRangeException();
