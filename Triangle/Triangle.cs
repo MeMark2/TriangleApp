@@ -17,6 +17,11 @@ namespace Triangle
         /// <returns>the hypotenuse as a double</returns>
         public double CalcHypotenuse(double a, double b)
         {
+            if (a <= 0.0 || b <= 0.0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
             // Use pythagorean theorem to calculate the hypotenuse
             return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
         }
