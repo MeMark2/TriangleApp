@@ -18,12 +18,23 @@ namespace Triangle.tests
 
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void CalcHypotenuseException()
+        {
+            Triangle tri = new Triangle();
+            double hypotenuse = tri.CalcHypotenuse(3.0, 0.0);
+        }
+
+
+
+        [TestMethod]
         public void RightCalcAreaFunctional()
         {
             Triangle tri = new Triangle();
             double area = tri.RightCalcArea(5.0, 4.0);
             Assert.AreEqual(area, 10.0);
         }
+
 
 
         [TestMethod]
