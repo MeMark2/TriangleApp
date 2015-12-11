@@ -40,7 +40,7 @@ namespace Triangle
 
         public double CalcThirdAngle(double a, double b)
         {
-            return 0.0;
+            return (180.0 - a) - b;
         }
     }
 }
