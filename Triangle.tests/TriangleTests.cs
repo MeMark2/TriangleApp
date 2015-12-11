@@ -7,6 +7,9 @@ namespace Triangle.tests
     [TestClass]
     public class TriangleTests
     {
+        /// <summary>
+        /// This test asserts that the CalcHypotenuse method of the triangle is functional.
+        /// </summary>
         [TestMethod]
         public void CalcHypotenuseFunctional()
         {
@@ -17,6 +20,10 @@ namespace Triangle.tests
 
 
 
+        /// <summary>
+        /// This test expects an ArguementOutOfRange exception when inputting invalid
+        /// arguements into the CalcHypotenuse method of the triangle.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void CalcHypotenuseException()
