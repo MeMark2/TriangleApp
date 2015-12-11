@@ -14,5 +14,15 @@ namespace Triangle.tests
             double hypotenuse = tri.CalcHypotenuse(3.0, 4.0);
             Assert.AreEqual(hypotenuse, 5.0);
         }
+
+
+
+        [TestMethod]
+        public void RightCalcAreaFunctional()
+        {
+            Triangle tri = new Triangle();
+            double area = tri.RightCalcArea(5.0, 4.0);
+            Assert.AreEqual(area, 10.0);
+        }
     }
 }

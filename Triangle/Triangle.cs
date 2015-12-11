@@ -20,5 +20,11 @@ namespace Triangle
             // Use pythagorean theorem to calculate the hypotenuse
             return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
         }
+
+
+        public double RightCalcArea(double a, double b)
+        {
+            return 0.0;
+        }
     }
 }
