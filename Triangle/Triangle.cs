@@ -58,6 +58,11 @@ namespace Triangle
         /// <returns>the degrees of the third angle as a double</returns>
         public double CalcThirdAngle(double a, double b)
         {
+            if (a + b >= 180.0 || a <= 0.0 || b <= 0.0)
+            {
+                throw new ArgumentException();
+            }
+
             // All angles must add up to 180.0 degrees
             return (180.0 - a) - b;
         }
