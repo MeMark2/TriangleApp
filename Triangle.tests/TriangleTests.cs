@@ -24,5 +24,14 @@ namespace Triangle.tests
             double area = tri.RightCalcArea(5.0, 4.0);
             Assert.AreEqual(area, 10.0);
         }
+
+
+        [TestMethod]
+        public void CalcThirdAngleFunctional()
+        {
+            Triangle tri = new Triangle();
+            double thirdAngle = tri.CalcThirdAngle(50.0, 70.0);
+            Assert.AreEqual(thirdAngle, 60.0);
+        }
     }
 }

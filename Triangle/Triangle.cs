@@ -35,5 +35,12 @@ namespace Triangle
             // Calculate the area of a right triangle
             return a * b / 2;
         }
+
+
+
+        public double CalcThirdAngle(double a, double b)
+        {
+            return 0.0;
+        }
     }
 }
