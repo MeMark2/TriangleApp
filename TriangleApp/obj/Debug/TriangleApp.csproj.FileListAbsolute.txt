@@ -1,0 +1,10 @@
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\bin\Debug\TriangleApp.exe.config
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\bin\Debug\TriangleApp.exe
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\bin\Debug\TriangleApp.pdb
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\bin\Debug\Triangle.dll
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\bin\Debug\Triangle.pdb
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.Properties.Resources.resources
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.csproj.GenerateResource.Cache
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.exe
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.pdb

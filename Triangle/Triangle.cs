@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Triangle
 {
-    public class Class1
+    public class Triangle
     {
+        public double CalcHypotenuse(double a, double b)
+        {
+            return 0.0;
+        }
     }
 }

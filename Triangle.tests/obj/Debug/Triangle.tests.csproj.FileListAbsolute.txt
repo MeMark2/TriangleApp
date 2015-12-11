@@ -1,0 +1,7 @@
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\Triangle.tests\obj\Debug\Triangle.tests.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\Triangle.tests\bin\Debug\Triangle.tests.dll
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\Triangle.tests\bin\Debug\Triangle.tests.pdb
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\Triangle.tests\bin\Debug\Triangle.dll
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\Triangle.tests\bin\Debug\Triangle.pdb
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\Triangle.tests\obj\Debug\Triangle.tests.dll
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\Triangle.tests\obj\Debug\Triangle.tests.pdb
