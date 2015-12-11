@@ -10,7 +10,7 @@ namespace Triangle
     {
         public double CalcHypotenuse(double a, double b)
         {
-            return 0.0;
+            return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
         }
     }
 }
