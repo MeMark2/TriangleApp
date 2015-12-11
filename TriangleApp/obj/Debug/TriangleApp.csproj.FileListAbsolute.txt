@@ -8,3 +8,4 @@ C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\De
 C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.csproj.GenerateResource.Cache
 C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.exe
 C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.pdb
+C:\Users\Mark\Desktop\Desktop\School\SQ1\Assignment3\Triangle\TriangleApp\obj\Debug\TriangleApp.TriangleApp.resources
