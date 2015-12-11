@@ -38,6 +38,12 @@ namespace Triangle
         /// <returns>the area of the triangle as a double</returns>
         public double RightCalcArea(double a, double b)
         {
+            // Throw exception if the values cant be used to calculate the area
+            if (a <= 0.0 || b <= 0.0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
             // Calculate the area of a right triangle
             return a * b / 2;
         }
