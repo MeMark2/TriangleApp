@@ -61,5 +61,15 @@ namespace Triangle.tests
             double thirdAngle = tri.CalcThirdAngle(50.0, 70.0);
             Assert.AreEqual(thirdAngle, 60.0);
         }
+
+
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void CalcThirdAngleException()
+        {
+            Triangle tri = new Triangle();
+            double thirdAngle = tri.CalcThirdAngle(100.0, 100.0);
+        }
     }
 }
