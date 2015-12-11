@@ -22,8 +22,17 @@ namespace Triangle
         }
 
 
+
+        /// <summary>
+        /// This method calculates the area of a right triangle given the
+        /// length of the two shorter sides.
+        /// </summary>
+        /// <param name="a">the length of one of the sides (not the hypotenuse)</param>
+        /// <param name="b">the length of the other side (not the hypotenuse)</param>
+        /// <returns>the area of the triangle as a double</returns>
         public double RightCalcArea(double a, double b)
         {
+            // Calculate the area of a right triangle
             return a * b / 2;
         }
     }
