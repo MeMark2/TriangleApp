@@ -138,9 +138,42 @@ namespace Triangle
         }
 
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="side1"></param>
+        /// <param name="side2"></param>
         public void SetRightTriangleSides(double side1, double side2)
         {
+            if (angleAB == 90.0)
+            {
+                double side3 = CalcHypotenuse(side1, side2);
 
+                sideA = side1;
+                sideB = side2;
+                sideC = side3;
+            }
+            else if (angleBC == 90.0)
+            {
+                double side3 = CalcHypotenuse(side1, side2);
+
+                sideB = side1;
+                sideC = side2;
+                sideA = side3;
+            }
+            else if (angleCA == 90.0)
+            {
+                double side3 = CalcHypotenuse(side1, side2);
+
+                sideC = side1;
+                sideA = side2;
+                sideB = side3;
+            }
+            else
+            {
+                throw new InvalidOperationException();
+            }
         }
     }
 }

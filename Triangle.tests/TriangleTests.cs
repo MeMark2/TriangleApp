@@ -96,6 +96,7 @@ namespace Triangle.tests
         [ExpectedException(typeof(InvalidOperationException))]
         public void SetRightTriangleSidesException()
         {
+            // Triangle is by default not a right triangle when instantiated
             Triangle tri = new Triangle();
             tri.SetRightTriangleSides(1.0, 1.0);
         }
