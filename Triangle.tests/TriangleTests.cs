@@ -38,6 +38,16 @@ namespace Triangle.tests
 
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void RightCalcAreaException()
+        {
+            Triangle tri = new Triangle();
+            double area = tri.RightCalcArea(-5.0, 4.0);
+        }
+
+
+
+        [TestMethod]
         public void CalcThirdAngleFunctional()
         {
             Triangle tri = new Triangle();
