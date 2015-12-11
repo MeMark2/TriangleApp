@@ -24,7 +24,7 @@ namespace Triangle
 
         public double RightCalcArea(double a, double b)
         {
-            return 0.0;
+            return a * b / 2;
         }
     }
 }
