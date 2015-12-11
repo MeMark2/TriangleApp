@@ -35,27 +35,27 @@
             this.triangleAngleCA = new System.Windows.Forms.Label();
             this.triangleAngleAB = new System.Windows.Forms.Label();
             this.setAnglesPanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.setAnglesLabel = new System.Windows.Forms.Label();
-            this.setAngleABLabel = new System.Windows.Forms.Label();
-            this.setAngleBCLabel = new System.Windows.Forms.Label();
+            this.setAnglesButton = new System.Windows.Forms.Button();
+            this.setBCBox = new System.Windows.Forms.NumericUpDown();
             this.setABBox = new System.Windows.Forms.NumericUpDown();
-            this.B = new System.Windows.Forms.NumericUpDown();
-            this.rightTriangleLabel = new System.Windows.Forms.Label();
-            this.setSide1Box = new System.Windows.Forms.NumericUpDown();
-            this.side1Label = new System.Windows.Forms.Label();
+            this.setAngleBCLabel = new System.Windows.Forms.Label();
+            this.setAngleABLabel = new System.Windows.Forms.Label();
+            this.setAnglesLabel = new System.Windows.Forms.Label();
+            this.rightTrianglePanel = new System.Windows.Forms.Panel();
+            this.areaLabel = new System.Windows.Forms.Label();
+            this.calcAreaButton = new System.Windows.Forms.Button();
+            this.setSidesButton = new System.Windows.Forms.Button();
             this.setSide2Box = new System.Windows.Forms.NumericUpDown();
             this.side2Label = new System.Windows.Forms.Label();
-            this.setAnglesButton = new System.Windows.Forms.Button();
-            this.setSidesButton = new System.Windows.Forms.Button();
-            this.calcAreaButton = new System.Windows.Forms.Button();
-            this.areaLabel = new System.Windows.Forms.Label();
+            this.setSide1Box = new System.Windows.Forms.NumericUpDown();
+            this.rightTriangleLabel = new System.Windows.Forms.Label();
+            this.side1Label = new System.Windows.Forms.Label();
             this.setAnglesPanel.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.setBCBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setABBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.setSide1Box)).BeginInit();
+            this.rightTrianglePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.setSide2Box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setSide1Box)).BeginInit();
             this.SuspendLayout();
             // 
             // sideALabel
@@ -115,7 +115,7 @@
             // setAnglesPanel
             // 
             this.setAnglesPanel.Controls.Add(this.setAnglesButton);
-            this.setAnglesPanel.Controls.Add(this.B);
+            this.setAnglesPanel.Controls.Add(this.setBCBox);
             this.setAnglesPanel.Controls.Add(this.setABBox);
             this.setAnglesPanel.Controls.Add(this.setAngleBCLabel);
             this.setAnglesPanel.Controls.Add(this.setAngleABLabel);
@@ -125,48 +125,33 @@
             this.setAnglesPanel.Size = new System.Drawing.Size(298, 125);
             this.setAnglesPanel.TabIndex = 6;
             // 
-            // panel2
+            // setAnglesButton
             // 
-            this.panel2.Controls.Add(this.areaLabel);
-            this.panel2.Controls.Add(this.calcAreaButton);
-            this.panel2.Controls.Add(this.setSidesButton);
-            this.panel2.Controls.Add(this.setSide2Box);
-            this.panel2.Controls.Add(this.side2Label);
-            this.panel2.Controls.Add(this.setSide1Box);
-            this.panel2.Controls.Add(this.rightTriangleLabel);
-            this.panel2.Controls.Add(this.side1Label);
-            this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(23, 155);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(298, 134);
-            this.panel2.TabIndex = 7;
+            this.setAnglesButton.Location = new System.Drawing.Point(6, 99);
+            this.setAnglesButton.Name = "setAnglesButton";
+            this.setAnglesButton.Size = new System.Drawing.Size(75, 23);
+            this.setAnglesButton.TabIndex = 5;
+            this.setAnglesButton.Text = "Set Angles";
+            this.setAnglesButton.UseVisualStyleBackColor = true;
+            this.setAnglesButton.Click += new System.EventHandler(this.setAnglesButton_Click);
             // 
-            // setAnglesLabel
+            // setBCBox
             // 
-            this.setAnglesLabel.AutoSize = true;
-            this.setAnglesLabel.Location = new System.Drawing.Point(3, 7);
-            this.setAnglesLabel.Name = "setAnglesLabel";
-            this.setAnglesLabel.Size = new System.Drawing.Size(102, 13);
-            this.setAnglesLabel.TabIndex = 0;
-            this.setAnglesLabel.Text = "Set Triangle Angles:";
-            // 
-            // setAngleABLabel
-            // 
-            this.setAngleABLabel.AutoSize = true;
-            this.setAngleABLabel.Location = new System.Drawing.Point(6, 40);
-            this.setAngleABLabel.Name = "setAngleABLabel";
-            this.setAngleABLabel.Size = new System.Drawing.Size(73, 13);
-            this.setAngleABLabel.TabIndex = 1;
-            this.setAngleABLabel.Text = "Set Angle AB:";
-            // 
-            // setAngleBCLabel
-            // 
-            this.setAngleBCLabel.AutoSize = true;
-            this.setAngleBCLabel.Location = new System.Drawing.Point(6, 74);
-            this.setAngleBCLabel.Name = "setAngleBCLabel";
-            this.setAngleBCLabel.Size = new System.Drawing.Size(73, 13);
-            this.setAngleBCLabel.TabIndex = 2;
-            this.setAngleBCLabel.Text = "Set Angle BC:";
+            this.setBCBox.DecimalPlaces = 1;
+            this.setBCBox.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.setBCBox.Location = new System.Drawing.Point(117, 72);
+            this.setBCBox.Maximum = new decimal(new int[] {
+            180,
+            0,
+            0,
+            0});
+            this.setBCBox.Name = "setBCBox";
+            this.setBCBox.Size = new System.Drawing.Size(120, 20);
+            this.setBCBox.TabIndex = 4;
             // 
             // setABBox
             // 
@@ -186,59 +171,77 @@
             this.setABBox.Size = new System.Drawing.Size(120, 20);
             this.setABBox.TabIndex = 3;
             // 
-            // B
+            // setAngleBCLabel
             // 
-            this.B.DecimalPlaces = 1;
-            this.B.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.B.Location = new System.Drawing.Point(117, 72);
-            this.B.Maximum = new decimal(new int[] {
-            180,
-            0,
-            0,
-            0});
-            this.B.Name = "B";
-            this.B.Size = new System.Drawing.Size(120, 20);
-            this.B.TabIndex = 4;
+            this.setAngleBCLabel.AutoSize = true;
+            this.setAngleBCLabel.Location = new System.Drawing.Point(6, 74);
+            this.setAngleBCLabel.Name = "setAngleBCLabel";
+            this.setAngleBCLabel.Size = new System.Drawing.Size(73, 13);
+            this.setAngleBCLabel.TabIndex = 2;
+            this.setAngleBCLabel.Text = "Set Angle BC:";
             // 
-            // rightTriangleLabel
+            // setAngleABLabel
             // 
-            this.rightTriangleLabel.AutoSize = true;
-            this.rightTriangleLabel.Location = new System.Drawing.Point(9, 11);
-            this.rightTriangleLabel.Name = "rightTriangleLabel";
-            this.rightTriangleLabel.Size = new System.Drawing.Size(115, 13);
-            this.rightTriangleLabel.TabIndex = 0;
-            this.rightTriangleLabel.Text = "Right Triangle Options:";
+            this.setAngleABLabel.AutoSize = true;
+            this.setAngleABLabel.Location = new System.Drawing.Point(6, 40);
+            this.setAngleABLabel.Name = "setAngleABLabel";
+            this.setAngleABLabel.Size = new System.Drawing.Size(73, 13);
+            this.setAngleABLabel.TabIndex = 1;
+            this.setAngleABLabel.Text = "Set Angle AB:";
             // 
-            // setSide1Box
+            // setAnglesLabel
             // 
-            this.setSide1Box.DecimalPlaces = 1;
-            this.setSide1Box.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.setSide1Box.Location = new System.Drawing.Point(120, 42);
-            this.setSide1Box.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.setSide1Box.Name = "setSide1Box";
-            this.setSide1Box.Size = new System.Drawing.Size(120, 20);
-            this.setSide1Box.TabIndex = 6;
+            this.setAnglesLabel.AutoSize = true;
+            this.setAnglesLabel.Location = new System.Drawing.Point(3, 7);
+            this.setAnglesLabel.Name = "setAnglesLabel";
+            this.setAnglesLabel.Size = new System.Drawing.Size(102, 13);
+            this.setAnglesLabel.TabIndex = 0;
+            this.setAnglesLabel.Text = "Set Triangle Angles:";
             // 
-            // side1Label
+            // rightTrianglePanel
             // 
-            this.side1Label.AutoSize = true;
-            this.side1Label.Location = new System.Drawing.Point(9, 44);
-            this.side1Label.Name = "side1Label";
-            this.side1Label.Size = new System.Drawing.Size(41, 13);
-            this.side1Label.TabIndex = 5;
-            this.side1Label.Text = "Side A:";
+            this.rightTrianglePanel.Controls.Add(this.areaLabel);
+            this.rightTrianglePanel.Controls.Add(this.calcAreaButton);
+            this.rightTrianglePanel.Controls.Add(this.setSidesButton);
+            this.rightTrianglePanel.Controls.Add(this.setSide2Box);
+            this.rightTrianglePanel.Controls.Add(this.side2Label);
+            this.rightTrianglePanel.Controls.Add(this.setSide1Box);
+            this.rightTrianglePanel.Controls.Add(this.rightTriangleLabel);
+            this.rightTrianglePanel.Controls.Add(this.side1Label);
+            this.rightTrianglePanel.Enabled = false;
+            this.rightTrianglePanel.Location = new System.Drawing.Point(23, 155);
+            this.rightTrianglePanel.Name = "rightTrianglePanel";
+            this.rightTrianglePanel.Size = new System.Drawing.Size(298, 134);
+            this.rightTrianglePanel.TabIndex = 7;
+            // 
+            // areaLabel
+            // 
+            this.areaLabel.AutoSize = true;
+            this.areaLabel.Location = new System.Drawing.Point(188, 109);
+            this.areaLabel.Name = "areaLabel";
+            this.areaLabel.Size = new System.Drawing.Size(35, 13);
+            this.areaLabel.TabIndex = 10;
+            this.areaLabel.Text = "Area: ";
+            // 
+            // calcAreaButton
+            // 
+            this.calcAreaButton.Location = new System.Drawing.Point(87, 104);
+            this.calcAreaButton.Name = "calcAreaButton";
+            this.calcAreaButton.Size = new System.Drawing.Size(95, 23);
+            this.calcAreaButton.TabIndex = 9;
+            this.calcAreaButton.Text = "Calculate Area";
+            this.calcAreaButton.UseVisualStyleBackColor = true;
+            this.calcAreaButton.Click += new System.EventHandler(this.calcAreaButton_Click);
+            // 
+            // setSidesButton
+            // 
+            this.setSidesButton.Location = new System.Drawing.Point(6, 104);
+            this.setSidesButton.Name = "setSidesButton";
+            this.setSidesButton.Size = new System.Drawing.Size(75, 23);
+            this.setSidesButton.TabIndex = 6;
+            this.setSidesButton.Text = "Set Sides";
+            this.setSidesButton.UseVisualStyleBackColor = true;
+            this.setSidesButton.Click += new System.EventHandler(this.setSidesButton_Click);
             // 
             // setSide2Box
             // 
@@ -267,49 +270,48 @@
             this.side2Label.TabIndex = 7;
             this.side2Label.Text = "Side B:";
             // 
-            // setAnglesButton
+            // setSide1Box
             // 
-            this.setAnglesButton.Location = new System.Drawing.Point(6, 99);
-            this.setAnglesButton.Name = "setAnglesButton";
-            this.setAnglesButton.Size = new System.Drawing.Size(75, 23);
-            this.setAnglesButton.TabIndex = 5;
-            this.setAnglesButton.Text = "Set Angles";
-            this.setAnglesButton.UseVisualStyleBackColor = true;
-            this.setAnglesButton.Click += new System.EventHandler(this.setAnglesButton_Click);
+            this.setSide1Box.DecimalPlaces = 1;
+            this.setSide1Box.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.setSide1Box.Location = new System.Drawing.Point(120, 42);
+            this.setSide1Box.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.setSide1Box.Name = "setSide1Box";
+            this.setSide1Box.Size = new System.Drawing.Size(120, 20);
+            this.setSide1Box.TabIndex = 6;
             // 
-            // setSidesButton
+            // rightTriangleLabel
             // 
-            this.setSidesButton.Location = new System.Drawing.Point(6, 104);
-            this.setSidesButton.Name = "setSidesButton";
-            this.setSidesButton.Size = new System.Drawing.Size(75, 23);
-            this.setSidesButton.TabIndex = 6;
-            this.setSidesButton.Text = "Set Sides";
-            this.setSidesButton.UseVisualStyleBackColor = true;
+            this.rightTriangleLabel.AutoSize = true;
+            this.rightTriangleLabel.Location = new System.Drawing.Point(9, 11);
+            this.rightTriangleLabel.Name = "rightTriangleLabel";
+            this.rightTriangleLabel.Size = new System.Drawing.Size(115, 13);
+            this.rightTriangleLabel.TabIndex = 0;
+            this.rightTriangleLabel.Text = "Right Triangle Options:";
             // 
-            // calcAreaButton
+            // side1Label
             // 
-            this.calcAreaButton.Location = new System.Drawing.Point(87, 104);
-            this.calcAreaButton.Name = "calcAreaButton";
-            this.calcAreaButton.Size = new System.Drawing.Size(95, 23);
-            this.calcAreaButton.TabIndex = 9;
-            this.calcAreaButton.Text = "Calculate Area";
-            this.calcAreaButton.UseVisualStyleBackColor = true;
-            // 
-            // areaLabel
-            // 
-            this.areaLabel.AutoSize = true;
-            this.areaLabel.Location = new System.Drawing.Point(188, 109);
-            this.areaLabel.Name = "areaLabel";
-            this.areaLabel.Size = new System.Drawing.Size(35, 13);
-            this.areaLabel.TabIndex = 10;
-            this.areaLabel.Text = "Area: ";
+            this.side1Label.AutoSize = true;
+            this.side1Label.Location = new System.Drawing.Point(9, 44);
+            this.side1Label.Name = "side1Label";
+            this.side1Label.Size = new System.Drawing.Size(41, 13);
+            this.side1Label.TabIndex = 5;
+            this.side1Label.Text = "Side A:";
             // 
             // TriangleApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 310);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.rightTrianglePanel);
             this.Controls.Add(this.setAnglesPanel);
             this.Controls.Add(this.triangleAngleBC);
             this.Controls.Add(this.triangleAngleCA);
@@ -321,12 +323,12 @@
             this.Text = "Triangle App";
             this.setAnglesPanel.ResumeLayout(false);
             this.setAnglesPanel.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.setBCBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.setABBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.B)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.setSide1Box)).EndInit();
+            this.rightTrianglePanel.ResumeLayout(false);
+            this.rightTrianglePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.setSide2Box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setSide1Box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,11 +344,11 @@
         private System.Windows.Forms.Label triangleAngleAB;
         private System.Windows.Forms.Panel setAnglesPanel;
         private System.Windows.Forms.Label setAnglesLabel;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel rightTrianglePanel;
         private System.Windows.Forms.NumericUpDown setABBox;
         private System.Windows.Forms.Label setAngleBCLabel;
         private System.Windows.Forms.Label setAngleABLabel;
-        private System.Windows.Forms.NumericUpDown B;
+        private System.Windows.Forms.NumericUpDown setBCBox;
         private System.Windows.Forms.NumericUpDown setSide1Box;
         private System.Windows.Forms.Label rightTriangleLabel;
         private System.Windows.Forms.Label side1Label;

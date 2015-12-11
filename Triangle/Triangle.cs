@@ -61,6 +61,7 @@ namespace Triangle
         }
 
 
+
         /// <summary>
         /// This method will calculate the hypotenuse of a right triangle given 
         /// the length of the other 2 sides.
@@ -140,10 +141,13 @@ namespace Triangle
 
 
         /// <summary>
-        /// 
+        /// This method sets the length of all triangle sides if the triangle is a right
+        /// triangle. 
+        /// It expects the two sides other than the hypotenuse and uses the 
+        /// CalcHypotenuse method to calculate the hypotenuse.
         /// </summary>
-        /// <param name="side1"></param>
-        /// <param name="side2"></param>
+        /// <param name="side1">one of the sides that isnt the hypotenuse</param>
+        /// <param name="side2">the other side that isnt the hypotenuse</param>
         public void SetRightTriangleSides(double side1, double side2)
         {
             if (angleAB == 90.0)
