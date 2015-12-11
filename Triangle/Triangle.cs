@@ -138,6 +138,9 @@ namespace Triangle
         }
 
 
+        public void SetRightTriangleSides(double side1, double side2)
+        {
 
+        }
     }
 }

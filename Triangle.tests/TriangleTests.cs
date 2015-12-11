@@ -85,5 +85,19 @@ namespace Triangle.tests
             Triangle tri = new Triangle();
             double thirdAngle = tri.CalcThirdAngle(100.0, 100.0);
         }
+
+
+
+        /// <summary>
+        /// This test expects an InvalidOperationException exception when using 
+        /// SetRightTriangleSides methods and the triangle is not a right triangle.
+        /// </summary>
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void SetRightTriangleSidesException()
+        {
+            Triangle tri = new Triangle();
+            tri.SetRightTriangleSides(1.0, 1.0);
+        }
     }
 }
