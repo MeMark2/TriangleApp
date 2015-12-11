@@ -135,6 +135,7 @@
             this.panel2.Controls.Add(this.setSide1Box);
             this.panel2.Controls.Add(this.rightTriangleLabel);
             this.panel2.Controls.Add(this.side1Label);
+            this.panel2.Enabled = false;
             this.panel2.Location = new System.Drawing.Point(23, 155);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(298, 134);
@@ -274,6 +275,7 @@
             this.setAnglesButton.TabIndex = 5;
             this.setAnglesButton.Text = "Set Angles";
             this.setAnglesButton.UseVisualStyleBackColor = true;
+            this.setAnglesButton.Click += new System.EventHandler(this.setAnglesButton_Click);
             // 
             // setSidesButton
             // 
