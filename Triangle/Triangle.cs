@@ -38,8 +38,15 @@ namespace Triangle
 
 
 
+        /// <summary>
+        /// This method calculates the angle of a triangle given the other two angles.
+        /// </summary>
+        /// <param name="a">the degrees of one of the angles</param>
+        /// <param name="b">the degrees of another of the angles</param>
+        /// <returns>the degrees of the third angle as a double</returns>
         public double CalcThirdAngle(double a, double b)
         {
+            // All angles must add up to 180.0 degrees
             return (180.0 - a) - b;
         }
     }
