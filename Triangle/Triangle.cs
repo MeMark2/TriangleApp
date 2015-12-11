@@ -58,6 +58,7 @@ namespace Triangle
         /// <returns>the degrees of the third angle as a double</returns>
         public double CalcThirdAngle(double a, double b)
         {
+            // Throw exception if the angles passed in cant be used to create a triangle
             if (a + b >= 180.0 || a <= 0.0 || b <= 0.0)
             {
                 throw new ArgumentException();

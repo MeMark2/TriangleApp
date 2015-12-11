@@ -34,6 +34,9 @@ namespace Triangle.tests
 
 
 
+        /// <summary>
+        /// This test asserts that the RightCalcArea method of the triangle is functional.
+        /// </summary>
         [TestMethod]
         public void RightCalcAreaFunctional()
         {
@@ -44,6 +47,10 @@ namespace Triangle.tests
 
 
 
+        /// <summary>
+        /// This test expects an ArguementOutOfRange exception when inputting invalid
+        /// arguements into the RightCalcArea method of the triangle.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void RightCalcAreaException()
@@ -54,6 +61,9 @@ namespace Triangle.tests
 
 
 
+        /// <summary>
+        /// This test asserts that the CalcThirdAngle method of the triangle is functional.
+        /// </summary>
         [TestMethod]
         public void CalcThirdAngleFunctional()
         {
@@ -64,6 +74,10 @@ namespace Triangle.tests
 
 
 
+        /// <summary>
+        /// This test expects an ArgumentException exception when inputting invalid
+        /// arguements into the CalcThirdAngle method of the triangle.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void CalcThirdAngleException()
